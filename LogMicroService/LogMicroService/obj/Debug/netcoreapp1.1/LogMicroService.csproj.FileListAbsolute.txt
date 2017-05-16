@@ -1,0 +1,9 @@
+E:\NetLog\NetLogSystem\LogMicroService\LogMicroService\bin\Debug\netcoreapp1.1\LogMicroService.deps.json
+E:\NetLog\NetLogSystem\LogMicroService\LogMicroService\bin\Debug\netcoreapp1.1\LogMicroService.runtimeconfig.json
+E:\NetLog\NetLogSystem\LogMicroService\LogMicroService\bin\Debug\netcoreapp1.1\LogMicroService.runtimeconfig.dev.json
+E:\NetLog\NetLogSystem\LogMicroService\LogMicroService\bin\Debug\netcoreapp1.1\LogMicroService.dll
+E:\NetLog\NetLogSystem\LogMicroService\LogMicroService\bin\Debug\netcoreapp1.1\LogMicroService.pdb
+E:\NetLog\NetLogSystem\LogMicroService\LogMicroService\obj\Debug\netcoreapp1.1\LogMicroService.csprojResolveAssemblyReference.cache
+E:\NetLog\NetLogSystem\LogMicroService\LogMicroService\obj\Debug\netcoreapp1.1\LogMicroService.AssemblyInfo.cs
+E:\NetLog\NetLogSystem\LogMicroService\LogMicroService\obj\Debug\netcoreapp1.1\LogMicroService.dll
+E:\NetLog\NetLogSystem\LogMicroService\LogMicroService\obj\Debug\netcoreapp1.1\LogMicroService.pdb
