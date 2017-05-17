@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
 using Newtonsoft.Json;
+using Microsoft.AspNetCore.HttpOverrides;
 
 namespace LogMicroService
 {
@@ -62,7 +63,18 @@ namespace LogMicroService
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
+
+
+            app.UseForwardedHeaders(new ForwardedHeadersOptions
+            {
+                ForwardedHeaders = ForwardedHeaders.XForwardedFor |
+                 ForwardedHeaders.XForwardedProto
+            });
+
+
             app.UseMvc();
+
+
 
 
             app.UseMvc(routes =>
@@ -71,6 +83,9 @@ namespace LogMicroService
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+
+
 
         }
     }

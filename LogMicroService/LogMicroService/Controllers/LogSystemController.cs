@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.Features;
 
 namespace LogMicroService.Controllers
 {
@@ -13,10 +16,14 @@ namespace LogMicroService.Controllers
        
         
         [HttpPost]
-        public void NewMessage([FromBody]JObject value)
+        public void NewMessage([FromBody]LogMessage message)
         {
-            Console.WriteLine(value);
+            String strJson = JsonConvert.SerializeObject(message);
+            Console.WriteLine(strJson);
+            var address = Request.HttpContext.Connection.RemoteIpAddress;
+        
         }
+
 
 
     }
